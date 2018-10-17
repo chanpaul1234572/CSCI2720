@@ -11,12 +11,12 @@ $(document).ready(function() {
     $("#Responsive").hide();
     //fadeIn for elements
     $("header").fadeIn(2000);
-    $("nav:not(#specialbar)").fadeIn(3000);
-    $("#about").fadeIn(3500);
-    $("#courses").fadeIn(3500);
-    $("#links").fadeIn(4000);
-    $("#contact").fadeIn(4000);
-    $("#Responsive").fadeIn(4000);
+    $("nav:not(#specialbar)").fadeIn(2000);
+    $("#about").fadeIn(2500);
+    $("#courses").fadeIn(2500);
+    $("#links").fadeIn(3000);
+    $("#contact").fadeIn(3000);
+    $("#Responsive").fadeIn(3000);
 
     //specialbar hide and show
     $("#special").click(function() {
@@ -88,10 +88,12 @@ $(document).ready(function() {
 
     $("#footer").click(function() {
         if (moved == 0) {
-            $("section").animate({ "left": "+=50px" }, "slow");
+            $("section").animate({ "left": "+=100px" }, "slow");
+            $("section").animate({ "left": "-=100px" }, "slow");
             moved = 1;
         } else if (moved == 1) {
-            $("section").animate({ "left": "-=50px" }, "slow");
+            $("section").animate({ "left": "-=100px" }, "slow");
+            $("section").animate({ "left": "+=100px" }, "slow");
             moved = 0;
         }
     });
