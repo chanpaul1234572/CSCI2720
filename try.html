@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function loadFile(){
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function(){
+                    if (this.readyState == 4 && this.status == 200){
+                        document.getElementsByTagName("h1")[0].innerText = this.responseText;
+                    }
+                }
+                xhr.open("GET", "file.txt");
+                xhr.send();
+            }
+            window.onload = function(){
+                alert('Document is ready');
+                document.querySelector("h1").onclick = loadFile;  
+            };
+        </script>
+    </head>
+    <body>
+        <h1>Hello</h1>
+    </body>
+</html>

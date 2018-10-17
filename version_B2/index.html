@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allan" rel="stylesheet">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <title>Hello, world!</title>
+    <style>
+        .container-full {
+            margin: 0 auto;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body style="font-family: 'Roboto Slab' Allan;">
+    <article>
+        <header class="container" style="
+            text-align: center;
+            color: #3498db;
+            background-image: url('img/header2.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 300px;">
+            <h1 class="display-1" style="font-family: 'Roboto Slab'">Chan Paul</h1>
+            <h4 class="display-4" style="font-family: 'Roboto Slab';">Computer Science student</h4>
+        </header>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-info justify-content-center my-sm-2 py-1">
+            <ul class="navbar-nav text-center" style="font-family: Allan;">
+                <li class="nav-item"><a class="nav-link text-dark" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#courses">Courses that I take</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#links">Interest link</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact Me</a></li>
+                <li id="special" class="nav-item"><a class="nav-link text-danger" href="#">Special!</a></li>
+            </ul>
+        </nav>
+
+        <nav id="specialbar" class="navbar navbar-expand-md navbar-light bg-secondary justify-content-center my-sm-2 py-1">
+            <ul class="navbar-nav text-center" style="font-family: Allan;">
+                <li class="nav-item"><button class="btn btn-outline-success mx-3 my-sm-2 my-2" type="button" id="task1">Task1: Align</button></li>
+                <li class="nav-item"><button class="btn btn-outline-success mx-3 my-sm-2 my-2" type="button" id="task2">Task2: New Hobby</button></li>
+                <li class="nav-item"><button class="btn btn-outline-success mx-3 my-sm-2 my-2" type="button" id="task3">Task3: Scroll</button></li>
+                <li class="nav-item"><button class="btn btn-outline-success mx-3 my-sm-2 my-2" type="button" id="task4">Task4: Bouns</button></li>
+            </ul>
+        </nav>
+
+        <div id="scrollbar" class="progress mb-2 sticky-top" style="height: 30px;">
+            <div id="scrollbar_body" class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100"></div>
+        </div>
+
+        <!--Special Bar-->
+
+        <div class="container">
+            <div class="row">
+                <section id="about" class="col-sm col-lg-8 col-xl-7 bg-success p-sm-5 p-1 p-lg-1">
+                    <h2 class="text-center header" style="font-family: 'Roboto Slab'">About Me</h2>
+                    <p class="display-5">
+                        <picture class="float-right mx-2">
+                            <source srcset="img/profile.jpg" media="(max-width: 400px)">
+                            <source srcset="img/profile2.jpg">
+                            <img src="img/profile2.jpg" alt="PaulB" class="img-fluid">
+                        </picture>
+                        <h4 style="font-family: Allan">Hi My name is Paul, You can call me PaulB or Cyril.
+                            <br>I am a comupter science student and I love programming!
+                            <br>I also study about cyber security and maths.
+                        </h4>
+                    </p>
+                    <h3 style="font-family: 'Roboto Slab'">My hobbies</h3>
+                    <div class="d-flex">
+                        <div class="card bg-primary mx-2 ">
+                            <div class="card-body p-1 ">
+                                <h5 class="card-title text-center ">Programming!</h5>
+                            </div>
+                            <img class="card-img-bottom " src="img/programmer.jpg " alt="Programming">
+                        </div>
+                        <div class="card bg-primary mx-2 ">
+                            <div class="card-body p-1 ">
+                                <h5 class="card-title text-center ">Security!</h5>
+                            </div>
+                            <img class="card-img-bottom " src="img/hacking.png " alt="Security">
+                        </div>
+                        <div class="card bg-primary mx-2 ">
+                            <div class="card-body p-1 ">
+                                <h5 class="card-title text-center ">Mathematics!</h5>
+                            </div>
+                            <img class="card-img-bottom " src="img/math.jpg " alt="Mathematics">
+                        </div>
+                    </div>
+                </section>
+                <section id="courses" class="col-sm col-lg-4 col-xl-5 bg-danger p-1 p-lg-3">
+                    <h2 class="text-center header" style="font-family: 'Roboto Slab'">Courses that i take</h2>
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Course</th>
+                                <th scope="col">What is it about?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CSCI2040</td>
+                                <td>An introductory course to Python!!</td>
+                            </tr>
+                            <tr>
+                                <td>CSCI2720</td>
+                                <td>The development of web applications!?</td>
+                            </tr>
+                            <tr>
+                                <td>IERG4210</td>
+                                <td>To build a secure web applications!!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <section id="links" class="col-sm col-lg-8 col-xl-6 bg-primary p-sm-5 p-1 p-lg-1">
+                    <h2 class="text-center header" style="font-family: 'Roboto Slab'">Interesting Links</h2>
+                    <h3 style="font-family: 'Roboto Slab'">Programming</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="https://www.hackerrank.com/dashboard">Hackerrank</a></li>
+                        <li class="list-group-item"><a href="https://github.com/">Github</a></li>
+                    </ul>
+                    <h3 style="font-family: 'Roboto Slab'">Cyber Security</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="https://lonelysec.com/">波波的寂寞世界</a></li>
+                        <li class="list-group-item"><a href="https://ctftime.org/">CTFTime</a></li>
+                    </ul>
+                    <h3 style="font-family: 'Roboto Slab'">Mathematics</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw/">3Blue1Brown</a></li>
+                        <li class="list-group-item"><a href="https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A">Numberphile</a>
+                        </li>
+                    </ul>
+                </section>
+                <section id="contact" class="col-sm col-lg-4 col-xl-6 justify-content-center bg-secondary p-sm-5 p-1 p-lg-1">
+                    <h2 class="text-center header" style="font-family: 'Roboto Slab'">Contact Me</h2>
+                    <div class="row text-center">
+                        <div class="col-lg">
+                            <img class="rounded-circle" src="https://png.icons8.com/color/50/000000/google-mobile.png" alt="phone">
+                            <p>+852 98631 358</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-lg">
+                            <a href="https://www.github.com"><img class="rounded-circle" src="https://png.icons8.com/color/50/000000/github.png" alt="phone"></a>
+                            <p>chanpaul1234572</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-lg">
+                            <a href="https://www.gmail.com"><img class="rounded-circle" src="https://png.icons8.com/color/50/000000/inbox.png" alt="phone"></a>
+                            <p>chanpaul1108@gmail.com</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <p id="demo"></p>
+        <footer class="text-md-right text-light bg-dark p-2 mt-sm-3">
+            This website was built by <b>PaulBBBBB</b>, on <time>2018-10-15</time>
+        </footer>
+    </article>
+</body>
+
+</html>

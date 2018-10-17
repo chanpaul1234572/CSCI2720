@@ -1,0 +1,220 @@
+header {
+    /*background: lightyellow;*/
+    text-align: center;
+    padding: 2.5em;
+    background-image: url('img/header2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #3498db;
+    margin: 3px;
+    min-height: 200px;
+}
+
+header span {
+    font-family: 'Roboto Slab';
+    font-size: 3em;
+}
+
+.nav ul {
+    border-radius: 3px;
+    list-style-type: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(77.4%, 96.8%, 97.2%);
+    width: 100%;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    color: #007bff;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav ul li a:hover:not(#active) {
+    color: red;
+}
+
+#active {
+    float: right;
+}
+
+#active a {
+    background-color: rgb(76, 175, 80);
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    nav.nav li {
+        padding: 0;
+        float: none;
+    }
+    #active {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    section {
+        margin: 0;
+        padding: 1em;
+        border-radius: 0;
+    }
+    #about img {
+        min-width: 100%;
+    }
+    #about .flex-container div {
+        margin: 5px;
+    }
+    .container h4 {
+        padding: 2px 4px;
+        font-size: 12px;
+    }
+}
+
+section {
+    margin: 5px;
+    border-radius: 3px;
+    border: 3px solid rgb(9.3%, 70.2%, 49.9%);
+}
+
+section#about {
+    background-color: aquamarine;
+    overflow: auto;
+    padding: 32px;
+}
+
+section h2 {
+    font-family: 'Roboto Slab';
+}
+
+section h3 {
+    font-family: 'Roboto Slab';
+}
+
+section#about p img {
+    box-shadow: 5px 5px 5px grey;
+    float: right;
+    max-width: 80%;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container1 {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 25%;
+    font-family: 'Roboto Slab';
+    background: #2196F3;
+    margin: 5px auto;
+    color: white;
+    height: auto;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    font-size: 12px;
+    text-overflow: hidden;
+    overflow: auto;
+    padding: 2px 8px;
+}
+
+section#courses {
+    background-color: rgb(19%, 93.7%, 68.8%);
+}
+
+#courses table {
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+    margin: 2em;
+}
+
+#courses th,
+#courses td {
+    font-family: 'Roboto Slab';
+    padding: 1em;
+    border-bottom: 1px solid rgb(38.9%, 96.8%, 77.5%);
+}
+
+#courses tr:hover {
+    background: lightskyblue;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#links {
+    background: rgb(94.1%, 61.7%, 38.5%);
+}
+
+#links h2 {
+    text-align: center;
+}
+
+#links a:link {
+    margin: 3px;
+    text-decoration: none;
+}
+
+#links a:hover {
+    font-style: italic;
+}
+
+#contact {
+    background-color: rgb(95.8%, 96%, 18.7%);
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+.chip {
+    margin: auto;
+    margin-bottom: 5px;
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+footer {
+    background-color: rgb(4.2%, 89.3%, 90.9%);
+    font-weight: 200;
+    font-family: 'Roboto Slab';
+    text-align: right;
+    padding: 5px;
+    font-size: smaller;
+}

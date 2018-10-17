@@ -1,0 +1,47 @@
+header {
+    margin: 5px;
+    padding: 3em;
+    text-align: center;
+    min-height: 300px;
+    background-image: url(header2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #3498db;
+}
+
+header span {
+    font-family: 'Roboto Slab';
+    font-size: 3em;
+}
+
+a.nav-link {
+    color: #2c3e50;
+}
+
+li {
+    border-radius: 5px;
+}
+
+li:hover {
+    background-color: #34495e;
+}
+
+a.nav-link:hover {
+    color: #ecf0f1;
+}
+
+.bg-info {
+    background-color: #bdc3c7!important;
+}
+
+button {
+    margin-top: 5px;
+}
+
+img {
+    display: block;
+    min-width: 230px;
+    min-height: 95px;
+    width: auto;
+    height: auto;
+}
