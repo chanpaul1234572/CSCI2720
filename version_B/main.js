@@ -1,3 +1,6 @@
+//Name: Chan Paul
+//SID: 1155078895
+//Homework: HW1 VersionB
 let moved = 0;
 $(document).ready(function() {
     $("header").hide();
