@@ -1,3 +1,4 @@
+let moved = 0;
 $(document).ready(function() {
     $("header").hide();
     $("nav").hide();
@@ -11,11 +12,11 @@ $(document).ready(function() {
     //fadeIn for elements
     $("header").fadeIn(2000);
     $("nav:not(#specialbar)").fadeIn(3000);
-    $("#about").fadeIn(4000);
-    $("#courses").fadeIn(5000);
-    $("#links").fadeIn(5000);
-    $("#contact").fadeIn(5000);
-    $("#Responsive").fadeIn(5000);
+    $("#about").fadeIn(3500);
+    $("#courses").fadeIn(3500);
+    $("#links").fadeIn(4000);
+    $("#contact").fadeIn(4000);
+    $("#Responsive").fadeIn(4000);
 
     //specialbar hide and show
     $("#special").click(function() {
@@ -38,7 +39,7 @@ $(document).ready(function() {
 
     $("#task2").click(function() {
         var hobby = prompt("Want to add a new hobby!", "For example: Table Tennis");
-        var card = '<div class="card bg-primary mx-2 mb-2"><div class="card-body p-1 "><h5 class="card-title text-center ">' + hobby + '</h5></div><img class="card-img-bottom " src="img/new.png " alt="' + hobby + '"></div>';
+        var card = '<div class="card bg-primary mx-2 mb-2" style=" width: 100px"><div class="card-body p-1 "><h5 class="card-title text-center " style="font-size: 14px">' + hobby + '</h5></div><img class="card-img-bottom " src="img/new.png " alt="' + hobby + '"></div>';
         if (hobby != null) {
             $(".d-flex").last().append(card);
         }
@@ -77,6 +78,21 @@ $(document).ready(function() {
             var width2 = 'width: 0%';
             $("#scrollbar_body").attr('style', width);
             $("#scrollbar_body").text('0%');
+        }
+    });
+
+
+    $("#task4").click(function() {
+        alert("A special Easter egg is hidden on the footer, click it to try!(The section part will move left and move back when you click the footer)");
+    });
+
+    $("#footer").click(function() {
+        if (moved == 0) {
+            $("section").animate({ "left": "+=50px" }, "slow");
+            moved = 1;
+        } else if (moved == 1) {
+            $("section").animate({ "left": "-=50px" }, "slow");
+            moved = 0;
         }
     });
 
