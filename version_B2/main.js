@@ -7,6 +7,7 @@ $(document).ready(function() {
     $("#courses").hide();
     $("#specialbar").hide();
     $("#scrollbar").hide();
+    $("#Responsive").hide();
     //fadeIn for elements
     $("header").fadeIn(2000);
     $("nav:not(#specialbar)").fadeIn(3000);
@@ -14,6 +15,7 @@ $(document).ready(function() {
     $("#courses").fadeIn(5000);
     $("#links").fadeIn(5000);
     $("#contact").fadeIn(5000);
+    $("#Responsive").fadeIn(5000);
 
     //specialbar hide and show
     $("#special").click(function() {
@@ -36,7 +38,7 @@ $(document).ready(function() {
 
     $("#task2").click(function() {
         var hobby = prompt("Want to add a new hobby!", "For example: Table Tennis");
-        var card = '<div class="card bg-primary mx-2 "><div class="card-body p-1 "><h5 class="card-title text-center ">' + hobby + '</h5></div><img class="card-img-bottom " src="img/new.png " alt="' + hobby + '"></div>';
+        var card = '<div class="card bg-primary mx-2 mb-2"><div class="card-body p-1 "><h5 class="card-title text-center ">' + hobby + '</h5></div><img class="card-img-bottom " src="img/new.png " alt="' + hobby + '"></div>';
         if (hobby != null) {
             $(".d-flex").last().append(card);
         }
